@@ -6,6 +6,8 @@ import os
 import sys
 import ctypes
 
+print("Caroline Reaper\n")
+
 class AutoClicker:
     def __init__(self, delay=None):
         self.delay = delay
@@ -53,8 +55,6 @@ delay = float(delay_input) if delay_input != '0' else None
 hotkey = input("Enter hotkey to start/stop autoclicker: ")
 
 ctypes.windll.kernel32.SetConsoleTitleW("Caroline Reaper")
-
-print("Caroline Reaper\n")
 
 if __name__ == "__main__":
     autoclicker = AutoClicker(delay=delay)
